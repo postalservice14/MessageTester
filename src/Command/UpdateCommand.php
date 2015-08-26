@@ -2,6 +2,7 @@
 
 namespace Dn\MessageTester\Command;
 
+use Herrera\Json\Exception\FileException;
 use Herrera\Phar\Update\Manager;
 use Herrera\Phar\Update\Manifest;
 use Symfony\Component\Console\Command\Command;
@@ -20,7 +21,22 @@ class UpdateCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $manager = new Manager(Manifest::loadFile(self::MANIFEST_FILE));
-        $manager->update($this->getApplication()->getVersion(), true);
+        $output->writeln('Looking for updates...');
+
+        try {
+            $manager = new Manager(Manifest::loadFile(self::MANIFEST_FILE));
+        } catch (FileException $e) {
+            $output->writeln('<error>Unable to search for updates</error>');
+
+            return 1;
+        }
+
+        if ($manager->update($this->getApplication()->getVersion(), true)) {
+            $output->writeln('<info>Updated to latest version</info>');
+        } else {
+            $output->writeln('<comment>Already up-to-date</comment>');
+        }
+
+        return 0;
     }
 }
