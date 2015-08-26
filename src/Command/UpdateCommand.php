@@ -26,6 +26,9 @@ class UpdateCommand extends Command
         try {
             $manager = new Manager(Manifest::loadFile(self::MANIFEST_FILE));
         } catch (FileException $e) {
+            if ($output->getVerbosity() === OutputInterface::VERBOSITY_DEBUG) {
+                $output->writeln('<error>' . $e->getMessage() . '</error>');
+            }
             $output->writeln('<error>Unable to search for updates</error>');
 
             return 1;
