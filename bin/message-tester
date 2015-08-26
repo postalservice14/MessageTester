@@ -8,4 +8,5 @@ use Symfony\Component\Console\Application;
 
 $application = new Application('MessageTester', '@package_version@');
 $application->add(new Command\SendCommand());
+$application->add(new Command\UpdateCommand());
 $application->run();
