@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Dn\MessageTester\Command;
+use Symfony\Component\Console\Application;
+
+$application = new Application('MessageTester', '@package_version@');
+$application->add(new Command\HelloCommand());
+$application->run();
