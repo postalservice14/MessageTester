@@ -7,5 +7,5 @@ use Dn\MessageTester\Command;
 use Symfony\Component\Console\Application;
 
 $application = new Application('MessageTester', '@package_version@');
-$application->add(new Command\HelloCommand());
+$application->add(new Command\SendCommand());
 $application->run();

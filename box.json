@@ -13,6 +13,6 @@
     ],
     "git-version": "package_version",
     "main": "bin/message-tester",
-    "output": "message-tester.phar",
+    "output": "build/message-tester.phar",
     "stub": true
 }
