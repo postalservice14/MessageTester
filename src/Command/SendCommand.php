@@ -34,7 +34,9 @@ class SendCommand extends Command
                 $input->getOption('host'),
                 $input->getOption('port'),
                 $input->getOption('username'),
-                $input->getOption('password')
+                $input->getOption('password'),
+                '/',
+                array('allow_self_signed' => false)
             );
         } else {
             $output->writeln('SSL Disabled');
