@@ -7,7 +7,7 @@
     },
     {
         "name": "message-tester.phar",
-        "sha1": "SHA1(build/message-tester.phar)= 7c4adb31ff699a70c364b565cdfaa8a8bf57b86b",
+        "sha1": "7c4adb31ff699a70c364b565cdfaa8a8bf57b86b",
         "url": "http://postalservice14.github.io/MessageTester/downloads/message-tester-1.0.1.phar",
         "version": "1.0.1"
     }
