@@ -1,8 +1,8 @@
 [
     {
-        "name": "cliph.phar",
-        "sha1": "fbcded58df0ea838c17d56a5e3cdace56127d538",
-        "url": "http://mattketmo.github.io/cliph/downloads/my-cli-1.1.0.phar",
-        "version": "1.1.0"
+        "name": "message-tester.phar",
+        "sha1": "ce54a49d23625c71759582f296e9331c567f84b7",
+        "url": "http://postalservice14.github.io/MessageTester/downloads/message-tester-1.0.0.phar",
+        "version": "1.0.0"
     }
 ]
