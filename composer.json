@@ -1,6 +1,7 @@
 {
     "name": "dn/message-tester",
     "description": "AMQP Message Tester",
+    "license": "MIT",
     "authors": [
         {
             "name": "John Kelly",
