@@ -1,6 +1,8 @@
 # MessageTester
 AMQP Message Tester
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/97b729b3-b773-4462-9f0e-2513906fb747/big.png)](https://insight.sensiolabs.com/projects/97b729b3-b773-4462-9f0e-2513906fb747)
+
 ## Usage (example)
 1. `curl http://postalservice14.github.io/MessageTester/downloads/message-tester-1.0.0.phar > message-tester.phar`
 2. `chmod a+x message-tester.phar`
